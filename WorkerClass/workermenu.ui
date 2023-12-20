@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>WorkerMenu</class>
+ <widget class="QMainWindow" name="WorkerMenu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0" rowspan="4">
+     <widget class="QWidget" name="widget" native="true"/>
+    </item>
+    <item row="0" column="1">
+     <widget class="QPushButton" name="pushButton">
+      <property name="text">
+       <string>To product</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2" rowspan="4">
+     <widget class="QWidget" name="widget_2" native="true"/>
+    </item>
+    <item row="1" column="1">
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="text">
+       <string>Request for Manager</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QPushButton" name="pushButton_4">
+      <property name="text">
+       <string>Request for Boss</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QPushButton" name="pushButton_3">
+      <property name="text">
+       <string>Back</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuProduct">
+    <property name="title">
+     <string>Product</string>
+    </property>
+    <addaction name="actionAdd_Product"/>
+    <addaction name="actionDelete_Product"/>
+    <addaction name="separator"/>
+    <addaction name="actionPush_Request_to_Manager"/>
+    <addaction name="actionPush_Request_to_Boss"/>
+   </widget>
+   <widget class="QMenu" name="menuMy_Acoount">
+    <property name="title">
+     <string>My Acoount</string>
+    </property>
+   </widget>
+   <addaction name="menuProduct"/>
+   <addaction name="menuMy_Acoount"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionAdd_Product">
+   <property name="text">
+    <string>Add Product</string>
+   </property>
+  </action>
+  <action name="actionDelete_Product">
+   <property name="text">
+    <string>Delete Product</string>
+   </property>
+  </action>
+  <action name="actionPush_Request_to_Manager">
+   <property name="text">
+    <string>Push Request to Manager</string>
+   </property>
+  </action>
+  <action name="actionPush_Request_to_Boss">
+   <property name="text">
+    <string>Push Request to Boss</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
